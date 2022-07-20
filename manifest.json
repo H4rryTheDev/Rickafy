@@ -1,0 +1,22 @@
+{
+  "name": "Rickafy",
+  "version": "1.2.0",
+  "description": "Never Gonna Give You Up",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["background.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["rick.mp4"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3
+}
